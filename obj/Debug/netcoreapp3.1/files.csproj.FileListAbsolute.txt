@@ -1,0 +1,11 @@
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.exe
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.deps.json
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.runtimeconfig.json
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.runtimeconfig.dev.json
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.dll
+C:\Users\jlucas13\Documents\source\repos\files\bin\Debug\netcoreapp3.1\files.pdb
+C:\Users\jlucas13\Documents\source\repos\files\obj\Debug\netcoreapp3.1\files.csprojAssemblyReference.cache
+C:\Users\jlucas13\Documents\source\repos\files\obj\Debug\netcoreapp3.1\files.AssemblyInfoInputs.cache
+C:\Users\jlucas13\Documents\source\repos\files\obj\Debug\netcoreapp3.1\files.AssemblyInfo.cs
+C:\Users\jlucas13\Documents\source\repos\files\obj\Debug\netcoreapp3.1\files.dll
+C:\Users\jlucas13\Documents\source\repos\files\obj\Debug\netcoreapp3.1\files.pdb

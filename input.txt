@@ -1,0 +1,8 @@
+Sophie#Rat Terrier#12
+Rosie#Teacup Yorkie#5
+Buddy#Golden Hound#65
+Coby#Lab#50
+Izzy#Rat Terrier#10
+Butch#Lab#45
+Brandi#Rat Terrier#15
+Molly#Golden Hound#48 
