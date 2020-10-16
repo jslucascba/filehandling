@@ -15,11 +15,19 @@ namespace files
 
             PrintAllDogs(names, breed, weight, count);
 
-            weight[2] = 65;
+            //weight[2] = 65;
+
+            SortDogs(names, breed, weight, count);
+
+            Console.WriteLine("\n\nAfter the sort");
 
             PrintAllDogs(names, breed, weight, count);
 
-            SaveAllDogs(names, breed, weight, count);
+            Console.WriteLine("\n\nControl Break Report");
+
+            TotalWeightByBreed(breed, weight, count);
+
+            //SaveAllDogs(names, breed, weight, count);
 
         }
 
@@ -71,6 +79,54 @@ namespace files
             }
             //close
             outFile.Close();
+        }
+
+        public static void SortDogs(string[] names, string[] breed, int[] weight, int count){
+            for(int i=0; i< count-1; i++){
+                int minIndex = i;
+                for(int j=i+1; j< count; j++){
+                    if (breed[j].CompareTo(breed[minIndex]) < 0){
+                        minIndex = j;
+                    }
+                }
+                if(minIndex != i){
+                    Swap(names, minIndex, i);
+                    Swap(breed, minIndex, i);
+                    Swap(weight, minIndex, i);
+                }
+            }
+        }
+
+        public static void Swap(string[] myArray, int x, int y){
+            string temp = myArray[x];
+            myArray[x] = myArray[y];
+            myArray[y] = temp;
+        }
+
+        public static void Swap(int[] myArray, int x, int y){
+            int temp = myArray[x];
+            myArray[x] = myArray[y];
+            myArray[y] = temp;
+        }
+
+        public static void TotalWeightByBreed(string[] breed, int[] weight, int count){
+            int total = weight[0];
+            string currBreed = breed[0];
+
+            for(int i = 1; i<count; i++){
+                if(breed[i]==currBreed){
+                    total+= weight[i];
+                } else {
+                    ProcessBreak(breed[i], weight[i], ref currBreed, ref total);
+                }
+            }
+            ProcessBreak("na", 0, ref currBreed, ref total);
+        }
+
+        public static void ProcessBreak(string newBreed, int newWeight, ref string currBreed, ref int total){
+            Console.WriteLine($"Total weight for {currBreed} is {total}");
+            currBreed = newBreed;
+            total = newWeight;
         }
     }
 }
